@@ -62,25 +62,6 @@ with mp_hands.Hands(
                 hand_states = [fist, OK, palm]
                 z = landmarks[4].z
 
-                # Print state if changed
-                if finger_states != prev_finger_states or hand_states != prev_hand_states or z != lastz:
-                    """print("\nFinger states:")
-                    for name, state in zip(FINGER_NAMES, finger_states):
-                        if name == "Thumb":
-                            print(f"Thumb: {'Up' if state else 'Tucked'}")
-                        else:
-                            print(f"{name}: {'UP' if state else 'DOWN'}")
-                    if fist:
-                        print("\nFist detected")
-                    if OK:
-                        print("\nOK detected")
-                    if palm:
-                        print("\nPalm detected") """
-
-                    prev_finger_states = finger_states
-                    prev_hand_states = hand_states
-                    lastz = z
-
                 if OK:
                     z = landmarks[4].z
                     NEAR_LIMIT = -0.05
