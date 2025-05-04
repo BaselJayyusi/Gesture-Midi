@@ -46,8 +46,8 @@ python main.py
 
 ## Notes
 
-* MediaPipe depth values (`landmark.z`) may vary depending on your webcam and lighting conditions. You can adjust `NEAR_LIMIT` and `FAR_LIMIT` values in `main.py` for better responsiveness.
-* The program is optimized for one hand at a time (for now), visible clearly in the camera frame.
+* MediaPipe depth values (`landmark.z`) may vary depending on your webcam. You can adjust `NEAR_LIMIT` and `FAR_LIMIT` values in `main.py` for better responsiveness.
+* The program is optimized for one hand at a time (for now).
 
 
 ## Future Plans
